@@ -1,0 +1,17 @@
+node version check => node -v
+if react not exits => npm install -g create-react-app
+create react app   => npx create-react-app MernReactFrontend
+
+Create a folder => marnbackendnodejs
+command         => npm init 
+                => five time enter 
+install dependencyes  => npm install express cors mongoose dotenv 
+
+
+
+ReactJS frontend - 
+Start              => npm start
+Install Bootstrap  => npm install bootstrap
+Install react router dom  => npm install react-router-dom
+datepicker install        => npm install react-datepicker
+install axios             => npm install axios
