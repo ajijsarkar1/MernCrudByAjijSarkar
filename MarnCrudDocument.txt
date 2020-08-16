@@ -15,3 +15,7 @@ Install Bootstrap  => npm install bootstrap
 Install react router dom  => npm install react-router-dom
 datepicker install        => npm install react-datepicker
 install axios             => npm install axios
+install Redux             => npm install Redux 
+install React-Redux       => npm install React-Redux
+install js-cookie         => npm install js-cookie
+install redux-thunk       => npm install redux-thunk
