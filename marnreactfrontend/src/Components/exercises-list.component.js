@@ -31,6 +31,26 @@ export default class ExercisesList extends Component {
       .catch((error) => {
         console.log(error);
       })
+      this.componentDidMount2()
+  }
+
+
+  componentDidMount2(){
+    const user = {
+      code: "test",
+      description:"test",
+      PageNo:1,
+      PageSize:10
+    }
+
+    console.log(user);
+
+    axios.post('http://localhost:58341/api/nationality/list', user)
+      .then(res => console.log(res.data));
+
+    this.setState({
+      username: ''
+    })
   }
 
   deleteExercise(id) {

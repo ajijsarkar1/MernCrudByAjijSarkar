@@ -8,6 +8,7 @@ import EditExercise from "./Components/edit-exercise.component";
 import CreateExercise from "./Components/create-exercise.component";
 import CreateUser from "./Components/create-user.component";
 import HomeScreen from "./HOME/Screens/HomeScreen"
+import HomeDataInsert from "./HOME/Screens/HomeDataInsert"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/create" component={CreateExercise} />
       <Route path="/user" component={CreateUser} />
       <Route path="/Home" exact component={HomeScreen} />
+      <Route path="/HAdd" exact component={HomeDataInsert} />
       </div>
     </Router>
   );

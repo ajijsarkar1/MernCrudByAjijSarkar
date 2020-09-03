@@ -18,6 +18,9 @@ import {
     Home_LIST_REQUEST,
     Home_LIST_SUCCESS,
     Home_LIST_FAIL,
+    Home_SAVE_REQUEST,
+    Home_SAVE_SUCCESS,
+    Home_SAVE_FAIL,
   } from '../Constants/HomeConstants';
   
   function HomeListReducer(state = { products: [] }, action) {
@@ -59,18 +62,18 @@ import {
 //     }
 //   }
   
-//   function productSaveReducer(state = { product: {} }, action) {
-//     switch (action.type) {
-//       case PRODUCT_SAVE_REQUEST:
-//         return { loading: true };
-//       case PRODUCT_SAVE_SUCCESS:
-//         return { loading: false, success: true, product: action.payload };
-//       case PRODUCT_SAVE_FAIL:
-//         return { loading: false, error: action.payload };
-//       default:
-//         return state;
-//     }
-//   }
+  function HomeSaveReducer(state = { product: {} }, action) {
+    switch (action.type) {
+      case Home_SAVE_REQUEST:
+        return { loading: true };
+      case Home_SAVE_SUCCESS:
+        return { loading: false, success: true, product: action.payload };
+      case Home_SAVE_FAIL:
+        return { loading: false, error: action.payload };
+      default:
+        return state;
+    }
+  }
 //   function productReviewSaveReducer(state = {}, action) {
 //     switch (action.type) {
 //       case PRODUCT_REVIEW_SAVE_REQUEST:
@@ -89,7 +92,7 @@ import {
   export {
     HomeListReducer,
     // productDetailsReducer,
-    // productSaveReducer,
+    HomeSaveReducer,
     // productDeleteReducer,
     // productReviewSaveReducer,
   };
